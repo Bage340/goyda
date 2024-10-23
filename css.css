@@ -302,6 +302,12 @@ header {
 
 /* Порт на мобилу */
 @media (max-width: 768px) {
+    body {
+    margin: 0;
+    overflow-x: hidden; /* Убирает горизонтальный скролл */
+    animation: none;
+    }
+    
     .nav-menu {
         flex-direction: column; /* Располагаем элементы меню вертикально */
         align-items: center; /* Центрируем элементы */
