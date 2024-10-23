@@ -302,10 +302,19 @@ header {
 
 /* Порт на мобилу */
 @media (max-width: 768px) {
+    * {
+    box-sizing: border-box; /* Включает границы и padding в размер элемента */
+    animation: none !important;
+    }
+    
     body {
     margin: 0;
+    padding: 0;
     overflow-x: hidden; /* Убирает горизонтальный скролл */
-    animation: none;
+    }
+
+    .heart {
+        animation: fall 5s linear infinite;
     }
     
     .nav-menu {
@@ -338,6 +347,7 @@ header {
 
     .rainbow-text {
         font-size: 36px; /* Уменьшаем размер радужного текста */
+        animation: rainbow-text 5s infinite;
     }
 
     #heart-container {
