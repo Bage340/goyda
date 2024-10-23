@@ -306,6 +306,8 @@ header {
     box-sizing: border-box;
     animation: none !important; /* Отключаем все анимации */
     outline: 1px solid red;
+    transition: none !important;
+    transform: none !important;
     }
     
     body {
@@ -367,7 +369,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Ограничиваем высоту только высотой блока с радужным текстом */
+    height: 200px; /* Ограничим высоту контейнера */
     pointer-events: none;
     z-index: 0;
     }
