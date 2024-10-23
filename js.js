@@ -90,8 +90,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // Создаем сердечки каждые 100 миллисекунд для увеличения количества
     setInterval(createHeart, 100);
 });
-
-//Скрипт для переключения меню
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.nav-menu').classList.toggle('open');
-});
