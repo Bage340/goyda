@@ -327,6 +327,11 @@ header {
     height: auto;
     }
 
+    .card, #welcome-banner, .game-cards, header, #about, #contacts {
+    max-width: 100%;
+    overflow: hidden; /* Ограничиваем элементы, чтобы не выходили за границы */
+    }
+
     .heart {
         animation: fall 5s linear infinite;
     }
