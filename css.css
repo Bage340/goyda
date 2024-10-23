@@ -303,14 +303,26 @@ header {
 /* Порт на мобилу */
 @media (max-width: 768px) {
     * {
-    box-sizing: border-box; /* Включает границы и padding в размер элемента */
-    animation: none !important;
+    box-sizing: border-box;
+    animation: none !important; /* Отключаем все анимации */
+    outline: 1px solid red;
     }
     
     body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Убирает горизонтальный скролл */
+    }
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Убирает горизонтальный скролл */
+    }
+
+    img, video, iframe, .game-image, .card {
+    max-width: 100%;
+    height: auto;
     }
 
     .heart {
@@ -351,7 +363,13 @@ header {
     }
 
     #heart-container {
-        height: 30vh; /* Ограничиваем высоту контейнера для падающих сердечек */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ограничиваем высоту только высотой блока с радужным текстом */
+    pointer-events: none;
+    z-index: 0;
     }
 
     #about img {
