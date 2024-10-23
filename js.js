@@ -7,26 +7,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Скрипт для анимации при прокрутке
-//document.addEventListener("DOMContentLoaded", function() {
-//    const elements = document.querySelectorAll("#home .content > *, #games > .game-cards > *, #about > *, #contacts > *");
-//
-//  const observer = new IntersectionObserver((entries) => {
-//        entries.forEach(entry => {
-//            if (entry.isIntersecting) {
-//                entry.target.classList.add("show");
-//            } else {
-//                entry.target.classList.remove("show");
-//            }
-//        });
-//    }, {
-//        threshold: 0.1
-//    });
-//
-//    elements.forEach(element => {
-//        element.classList.add("hidden");
-//        observer.observe(element);
-//    });
-//});
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll("#home .content > *, #games > .game-cards > *, #about > *, #contacts > *");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    elements.forEach(element => {
+        element.classList.add("hidden");
+        observer.observe(element);
+    });
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {
